@@ -11,14 +11,16 @@
 		02ECD7F427E3C80D003DB55B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ECD7F327E3C80D003DB55B /* ContentView.swift */; };
 		02ECD7F627E3C80F003DB55B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02ECD7F527E3C80F003DB55B /* Assets.xcassets */; };
 		02ECD7F927E3C80F003DB55B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02ECD7F827E3C80F003DB55B /* Preview Assets.xcassets */; };
+		0AE85C98289076C400FF0DAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AE85C97289076C400FF0DAF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		02ECD7EE27E3C80D003DB55B /* Gato.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gato.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02ECD7F127E3C80D003DB55B /* GatoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatoApp.swift; sourceTree = "<group>"; };
-		02ECD7F327E3C80D003DB55B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		02ECD7F327E3C80D003DB55B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		02ECD7F527E3C80F003DB55B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02ECD7F827E3C80F003DB55B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0AE85C97289076C400FF0DAF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A9285C865EC788561620FA5 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
 		5A928F2562E0FD9F45A22AE9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -44,6 +46,7 @@
 			);
 			sourceTree = "<group>";
 			usesTabs = 1;
+			wrapsLines = 0;
 		};
 		02ECD7EF27E3C80D003DB55B /* Products */ = {
 			isa = PBXGroup;
@@ -58,6 +61,7 @@
 			children = (
 				02ECD7F727E3C80F003DB55B /* Preview Content */,
 				02ECD7F527E3C80F003DB55B /* Assets.xcassets */,
+				0AE85C97289076C400FF0DAF /* LaunchScreen.storyboard */,
 				02ECD7F127E3C80D003DB55B /* GatoApp.swift */,
 				02ECD7F327E3C80D003DB55B /* ContentView.swift */,
 			);
@@ -130,6 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AE85C98289076C400FF0DAF /* LaunchScreen.storyboard in Resources */,
 				02ECD7F927E3C80F003DB55B /* Preview Assets.xcassets in Resources */,
 				02ECD7F627E3C80F003DB55B /* Assets.xcassets in Resources */,
 			);
@@ -278,6 +283,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -308,6 +314,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

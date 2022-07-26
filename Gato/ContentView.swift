@@ -30,19 +30,18 @@ struct ContentView: View {
 				ForEach(ranges, id: \.self) { range in
 					HStack {
 						ForEach(range, id: \.self) { i in
-							Button(action: {
+							Button {
 								playerTapped(i)
-							}, label: {
+							} label: {
 								RoundedRectangle(cornerRadius: 10)
-									.aspectRatio(1.0, contentMode: .fit)
-									.foregroundColor(.darkGray)
-									.overlay(Text("\(moves[i])")
-										.fontWeight(.bold)
-										.font(.system(size: 100))
-										.foregroundColor(.white)
-									)
-							})
-							.disabled(moves[i] != "" || resettingGame)
+								.aspectRatio(1.0, contentMode: .fit)
+								.foregroundColor(.darkGray)
+								.overlay(Text("\(moves[i])")
+								.fontWeight(.bold)
+								.font(.system(size: 100))
+								.foregroundColor(.white)
+								)
+							}.disabled(moves[i] != "" || resettingGame)
 						}
 					}
 				}
@@ -56,33 +55,33 @@ struct ContentView: View {
 
 			if !resettingGame {
 				Text("Turno del jugador \(player)")
-					.font(.largeTitle.bold())
-					.foregroundColor(.white)
-					.frame(height: 100)
+				.font(.largeTitle.bold())
+				.foregroundColor(.white)
+				.frame(height: 100)
 			} else {
 				Text("\(winnerAlert)")
-					.font(.largeTitle.bold())
-					.foregroundColor(.white)
-					.frame(height: 50)
+				.font(.largeTitle.bold())
+				.foregroundColor(.white)
+				.frame(height: 50)
 
 				Button {
 					resetGame()
 				} label: {
 					Text("Jugar otra vez")
-						.fontWeight(.bold)
-						.font(.system(size: 30))
-						.foregroundColor(.white)
-						.background(
-							RoundedRectangle(cornerRadius: 10).fill(
-								LinearGradient(
-									gradient: Gradient(colors: [.darkGreen, .graywhite]),
-									startPoint: .leading,
-									endPoint: .trailing
-								)
+					.fontWeight(.bold)
+					.font(.system(size: 30))
+					.foregroundColor(.white)
+					.background(
+						RoundedRectangle(cornerRadius: 10).fill(
+							LinearGradient(
+								gradient: Gradient(colors: [.darkGreen, .graywhite]),
+								startPoint: .leading,
+								endPoint: .trailing
 							)
-							.frame(width: 200, height: 50)
-							.shadow(radius: 3)
 						)
+						.frame(width: 200, height: 50)
+						.shadow(radius: 3)
+					)
 				}
 			}
 
