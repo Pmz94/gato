@@ -26,7 +26,7 @@ struct ContentView: View {
 
 			Spacer()
 
-			VStack() {
+			VStack {
 				ForEach(ranges, id: \.self) { range in
 					HStack {
 						ForEach(range, id: \.self) { i in
@@ -36,17 +36,17 @@ struct ContentView: View {
 								RoundedRectangle(cornerRadius: 10)
 								.aspectRatio(1.0, contentMode: .fit)
 								.foregroundColor(.darkGray)
-								.overlay(Text("\(moves[i])")
-								.fontWeight(.bold)
-								.font(.system(size: 100))
-								.foregroundColor(.white)
+								.overlay(
+									Text("\(moves[i])")
+									.fontWeight(.bold)
+									.font(.system(size: 100))
+									.foregroundColor(.white)
 								)
 							}.disabled(moves[i] != "" || resettingGame)
 						}
 					}
 				}
-			}
-			.frame(maxWidth: .infinity)
+			}.frame(maxWidth: .infinity)
 			.padding(10)
 			.background(.thinMaterial)
 			.clipShape(RoundedRectangle(cornerRadius: 10))
@@ -78,16 +78,14 @@ struct ContentView: View {
 								startPoint: .leading,
 								endPoint: .trailing
 							)
-						)
-						.frame(width: 200, height: 50)
+						).frame(width: 200, height: 50)
 						.shadow(radius: 3)
 					)
 				}
 			}
 
 			Spacer()
-		}
-		.padding()
+		}.padding()
 		.background(
 			RadialGradient(
 				gradient: Gradient(colors: [
